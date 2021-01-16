@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GeekBrainsHomework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3W-3H-63b">
+                                <rect key="frame" x="20" y="424" width="350" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zyZ-Fv-tSZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="logInTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sho-eq-cer"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VK_Compact_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="MJg-kE-wBo">
+                                <rect key="frame" x="145" y="144" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9pt-QR-Uuu"/>
+                                    <constraint firstAttribute="height" constant="100" id="K3N-Tu-h0E"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email or phone" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="j7R-Dl-n55">
+                                <rect key="frame" x="20" y="306" width="350" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qhe-ik-YEP"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EaG-sP-yNs">
+                                <rect key="frame" x="20" y="348" width="350" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HS7-VN-CkI"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y3W-3H-63b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0qm-PA-O5Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y3W-3H-63b" secondAttribute="trailing" constant="20" id="2UT-mc-CqN"/>
+                            <constraint firstItem="j7R-Dl-n55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2lG-kF-cWZ"/>
+                            <constraint firstItem="MJg-kE-wBo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="9im-Xj-dOO"/>
+                            <constraint firstItem="EaG-sP-yNs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sa1-dU-cOS"/>
+                            <constraint firstItem="EaG-sP-yNs" firstAttribute="top" secondItem="j7R-Dl-n55" secondAttribute="bottom" constant="2" id="W6m-hi-xKa"/>
+                            <constraint firstItem="MJg-kE-wBo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wrg-ve-cb5"/>
+                            <constraint firstItem="y3W-3H-63b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XoW-hI-bem"/>
+                            <constraint firstItem="j7R-Dl-n55" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d2j-zM-7lw"/>
+                            <constraint firstItem="EaG-sP-yNs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fPj-WP-gLv"/>
+                            <constraint firstItem="j7R-Dl-n55" firstAttribute="top" secondItem="MJg-kE-wBo" secondAttribute="bottom" constant="62" id="ktA-vw-fV8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="y3W-3H-63b" secondAttribute="trailing" id="njW-ni-08n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j7R-Dl-n55" secondAttribute="trailing" constant="20" id="oqE-5v-K3D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EaG-sP-yNs" secondAttribute="trailing" constant="20" id="tkK-pt-sj7"/>
+                            <constraint firstItem="y3W-3H-63b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vMd-77-vuX"/>
+                            <constraint firstItem="y3W-3H-63b" firstAttribute="top" secondItem="EaG-sP-yNs" secondAttribute="bottom" constant="36" id="yjr-dq-Ybg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logIn" destination="j7R-Dl-n55" id="JSf-Av-lTR"/>
+                        <outlet property="logInButton" destination="y3W-3H-63b" id="MGH-BE-QNX"/>
+                        <outlet property="password" destination="EaG-sP-yNs" id="4PE-Su-GuK"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-145" y="77"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="VK_Compact_Logo" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
